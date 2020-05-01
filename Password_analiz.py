@@ -91,14 +91,14 @@ def result(password):
         if summ >= 3:
             if attack_on_dict == 1:
                 return "Отличный"
-    elif len(password) >= 8:
+    if len(password) >= 8:
         if summ >= 3:
             if attack_on_dict == 1:
                 return "Стойкий"
         elif summ == 2:
             if attack_on_dict == 1:
                 return "Средний"
-    elif len(password) >= 1:
+    if len(password) >= 1:
         return "Слабый"
     return "Никакой"
 
@@ -280,7 +280,6 @@ dictionary14 = list('slaughterhouse, irreproducible, incompressible,'
                         ' comprehensible, bremsstrahlung'.split(', '))
 dictionary15 = list('irreconciliable, instrumentation, incomprehension'.split(', '))
 dictionary16 = ['incomprehensible']
-print(dictionary15)
 
 
 lower = string.ascii_lowercase
